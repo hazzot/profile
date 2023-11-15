@@ -1,66 +1,38 @@
 <!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Love</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
-</head>
-<body>
-    <div class="grid"></div>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
 
-    <div class="warning"></div>
-
-    <div class="base">
-        <button id="activate">
-            <span></span>
-        </button>
+  <body>
+    <!-- <audio autoplay="autopaly">
+      <source src="renxi.mp3" type="audio/mp3" />
+    </audio> -->
+    <!-- 星空html -->
+    <!-- <div> -->
+    <div class="container2">
+      <div class="content">
+        <canvas id="universe"></canvas>
+      </div>
+    </div>
+    <!-- </div> -->
+    <div class="title">
+      <!-- EDIT HERE -->
+      <h3 class="STARDUST1">Hoàng hôn thì ở phía tây</h3>
+      <h3 class="STARDUST3">Hoàng hôn thì ở phía tây      </h3>
+      <h3 class="STARDUST3">Bình yên thì ở phía em đây này</h3>
+      
+      <img class="img" src="hinh.jpeg" alt="JUNO_OKYO" />
+      <canvas id="pinkboard"></canvas>
     </div>
 
-    <div class="box opened" id="cover">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <span></span><span></span>
-    </div>
-
-    <div class="hinges"></div>
-
-    <div class="text">
-        SELF-&thinsp;DESTRUCT
-    </div>
-    
-    <div id="panel2">
-        <div id="msg">YOUR ANSWER IS FALSE</div>
-        <span id="again">AGAIN PLEASE</span>
-    </div>
-
-
-    <div id="panel">
-        <div id="msg">ANSWER NOW</div>
-        <div id="time">9</div>
-        <span id="abort"><a href="index2.html">YES</a></span>
-        <span id="no">NO</span>
-        <span id="detonate">Hiềnnnnn</span>
-    </div>
-
-    <div id="turn-off"></div>
-    <div id="closing"></div>
-
-    <div id="restart"><button id="reload"></button></div>
-
-    <div id="mute"></div>
-
-    <audio id="alarm">
-        <source src="https://josetxu.com/demos/sounds/self-destruct-alarm-count.mp3" type="audio/mpeg">
-    </audio>
-    
-    <script src="main.js"></script>
-
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/universe.js"></script>
+  </body>
 </html>
